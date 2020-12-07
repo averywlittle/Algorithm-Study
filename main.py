@@ -14,5 +14,5 @@ print(f'{time.perf_counter() - initA:0.9f} seconds')
 print('\n')
 
 initB = time.perf_counter()
-PA_1.karatsuba(a, b)
+print(PA_1.karatsuba(a, b))
 print(f'{time.perf_counter() - initB:0.9f} seconds')
