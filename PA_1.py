@@ -1,5 +1,5 @@
 
-# Karatsuba's algorithm is an efficient way to solve integer multiplication problems where the two inputs have an even number of digits
+# Karatsuba's algorithm is an efficient way to solve integer multiplication problems O(n^1.68)
 def karatsuba(a, b):
 
   if a < 10 or b < 10:
