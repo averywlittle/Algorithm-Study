@@ -1,13 +1,13 @@
-import PA_2
+# This file is reused as driver space to test programs and solutions
+
+import PA_3
 
 content_array = []
 
-with open('integer_array.txt') as f:
+with open('test_data/test_integer_array.txt') as f:
   for line in f:
     content_array.append(int(line.rstrip()))
 
-arr, inv = PA_2.sort_and_count_inversions(content_array)
-
-print('length content', len(content_array))
-print('length result', len(arr))
-print('inversions', inv)
+count = PA_3.quick_sort(content_array, 0, len(content_array)-1, 0)
+print(content_array)
+print('count', count)
